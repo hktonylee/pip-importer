@@ -3,7 +3,7 @@
 [project]
 name = "pip-importer"
 dynamic = ["version"]
-description = "This is pip-importer, which can import a package, or pip install first if the package does not exist."
+description = "This is a small Python utility which can import a package, or pip install first if the package does not exist."
 
 readme = "README.md"
 requires-python = ">=3.8"

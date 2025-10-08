@@ -1,6 +1,6 @@
 # Welcome
 
-This is a small Python utility which can import a package, or pip install first if the package does not exist.
+pip-importer is a small utility that can import a package, or pip install first if the package does not exist.
 
 
 #  Installation
