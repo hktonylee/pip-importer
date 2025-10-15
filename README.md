@@ -12,9 +12,9 @@ pip install pip-importer
 # Usage
 
 ```python
-import pip_importer
+from pip_importer import pip_import
 
-# This is same as `import pytest`
-# Or `pip install pytest` then `import pytest` if pytest is not installed
-pip_importer.pip_import("pytest")
+# If the environment has pytest, this is same as `import pytest`.
+# Otherwise, it will run `pip install pytest` then `import pytest`.
+pytest = pip_import("pytest")
 ```
