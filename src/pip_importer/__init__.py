@@ -1,4 +1,4 @@
-def pip_import(module_name, package_names=None, *, package=None):
+def pip_import(module_name, pip_install_names=None, *, package=None):
     import importlib
 
     try:
@@ -6,7 +6,7 @@ def pip_import(module_name, package_names=None, *, package=None):
     except ImportError:
         import pip
 
-        pip.main(["install", *(package_names or [module_name])])
+        pip.main(["install", *(pip_install_names or [module_name])])
         m = importlib.import_module(module_name, package=package)
 
     return m
